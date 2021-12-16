@@ -42,7 +42,7 @@
       <Param name="ul_gain" value="0"/>
     </ParamUnit>
     <ParamUnit param_id="14">
-      <Param name="dl_gain" value="21,19,16,13,10,7,4"/>
+      <Param name="dl_gain" value="21,19,16,13,10,7,6"/>
       <Param name="ul_gain" value="15"/>
     </ParamUnit>
     <ParamUnit param_id="15">

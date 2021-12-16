@@ -89,6 +89,11 @@ any software that is unrelated to enhancing end-user experience. -->
             <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
             <data cmd="PERF_RES_FPS_GBE2_TIMER2_MS" param1="3000"></data>
             <data cmd="PERF_RES_FPS_GBE2_MAX_BOOST_CNT" param1="4"></data>
+            <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="5"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="33"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT_90" param1="33"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT_120" param1="33"></data>
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
         </Activity>
     </Package>
     <Package name="com.ngame.allstar.in">
@@ -861,6 +866,22 @@ any software that is unrelated to enhancing end-user experience. -->
             <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_DURATION" param1="800000000"></data>
             <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_ACTIVE_TIME" param1="0"></data>
         </Activity>
+        <Activity name="com.google.android.apps.youtube.app.extensions.reel.watch.activity.ReelWatchActivity">
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+            <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+            <data cmd="PERF_RES_FPS_FBT_SHORT_RESCUE_NS" param1="16666666"></data>
+            <data cmd="PERF_RES_FPS_FBT_MIN_RESCUE_PERCENT" param1="50"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="100"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT_90" param1="100"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT_120" param1="100"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="60"></data>
+            <data cmd="PERF_RES_FPS_FBT_ULTRA_RESCUE" param1="1"></data>
+            <data cmd="PERF_RES_GPU_POWER_POLICY" param1="1"></data>
+            <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_OPP" param1="15"></data>
+            <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_DURATION" param1="800000000"></data>
+            <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_ACTIVE_TIME" param1="0"></data>
+        </Activity>
     </Package>
     <Package name="wp.wattpad">
         <Activity name="Common">
@@ -963,6 +984,7 @@ any software that is unrelated to enhancing end-user experience. -->
     </Package>
     <Package name="com.mobile.legends">
         <Activity name="com.moba.unityplugin.MobaGameUnityActivity">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
             <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="10"></data>
             <data cmd="PERF_RES_FPS_FBT_SHORT_RESCUE_NS" param1="16666666"></data>
             <data cmd="PERF_RES_FPS_FBT_MIN_RESCUE_PERCENT" param1="60"></data>
@@ -984,7 +1006,7 @@ any software that is unrelated to enhancing end-user experience. -->
             <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
             <data cmd="PERF_RES_FPS_GBE2_TIMER2_MS" param1="3000"></data>
             <data cmd="PERF_RES_FPS_GBE2_MAX_BOOST_CNT" param1="4"></data>
-            <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="10"></data>
+            <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
             <data cmd="PERF_RES_FPS_FBT_SHORT_RESCUE_NS" param1="16666666"></data>
             <data cmd="PERF_RES_FPS_FBT_MIN_RESCUE_PERCENT" param1="100"></data>
             <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="100"></data>
@@ -994,6 +1016,7 @@ any software that is unrelated to enhancing end-user experience. -->
             <data cmd="PERF_RES_FPS_FBT_ULTRA_RESCUE" param1="1"></data>
             <data cmd="PERF_RES_FPS_FBT_BOOST_TA" param1="1"></data>
             <data cmd="PERF_RES_GPU_POWER_POLICY" param1="1"></data>
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
         </Activity>
     </Package>
     <Package name="com.netease.mc.nearme.gamecenter">
