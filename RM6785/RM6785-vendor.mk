@@ -1317,6 +1317,7 @@ PRODUCT_PACKAGES += \
     libMcClient \
     libMtkOmxCore \
     libMtkSpeechEnh \
+    liboemcrypto \
     libOpenCL \
     libPolarrRender \
     libSonyIMX230PdafLibrary \
