@@ -216,22 +216,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libshowlogo",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libshowlogo.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsignal",
 	owner: "realme",
 	strip: {
@@ -17931,17 +17915,6 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "kpoc_charger",
-	owner: "realme",
-	srcs: ["proprietary/bin/kpoc_charger"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
 }
 
 cc_prebuilt_binary {
