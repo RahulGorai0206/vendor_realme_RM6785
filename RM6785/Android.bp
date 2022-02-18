@@ -8642,26 +8642,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liboemcrypto",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/liboemcrypto.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liboemcrypto.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libOpenCL",
 	owner: "realme",
 	strip: {
@@ -17503,6 +17483,26 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	check_elf_files: false,
 	relative_install_path: "hw",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "liboemcrypto",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/liboemcrypto.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/liboemcrypto.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	device_specific: true,
 }
