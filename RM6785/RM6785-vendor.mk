@@ -220,6 +220,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.tlbin \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin \
+    vendor/realme/RM6785/proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator-service.mediatek \
     vendor/realme/RM6785/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
     vendor/realme/RM6785/proprietary/vendor/etc/.tp/.thermal_policy_08:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_08 \
     vendor/realme/RM6785/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
@@ -1823,7 +1824,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.1-service-mediatek \
-    android.hardware.vibrator-service.mediatek \
     camerahalserver \
     hostapd \
     mtkfusionrild \

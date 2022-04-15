@@ -18209,19 +18209,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.vibrator-service.mediatek",
-	owner: "realme",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "camerahalserver",
 	owner: "realme",
 	srcs: ["proprietary/vendor/bin/hw/camerahalserver"],
