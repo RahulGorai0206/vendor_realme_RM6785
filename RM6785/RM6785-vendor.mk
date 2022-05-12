@@ -1297,6 +1297,7 @@ PRODUCT_PACKAGES += \
     libJpgEncPipe \
     libMcClient \
     libMtkOmxCore \
+    libMtkSpeechEnh \
     libOpenCL \
     libPolarrRender \
     libSonyIMX230PdafLibrary \
@@ -1312,6 +1313,7 @@ PRODUCT_PACKAGES += \
     libWaterMark \
     lib_bsscore \
     lib_iir \
+    lib_speech_enh \
     libaal_cust \
     libaal_key \
     libaal_mtk \
@@ -1522,7 +1524,10 @@ PRODUCT_PACKAGES += \
     libpq_prot \
     librgbwlightsensor \
     libscltm \
+    libsi_sixth \
     libsimaka \
+    libspeech_enh_lib \
+    libspeechparser_vendor \
     libssl-md \
     libssl-ss \
     libstagefrighthw \
@@ -1627,7 +1632,6 @@ PRODUCT_PACKAGES += \
     libmnl \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
-    libsi_sixth \
     libstorage_otp \
     libthermalalgo \
     libvc1dec_sa.ca7 \
