@@ -23,7 +23,7 @@
     <CMD name="PERF_RES_SCHED_BOOST_VALUE_BG" id="0x01400200">
         <Entry path="/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_bg_boost"></Entry>
         <Compare>more</Compare>
-        <MaxValue>100</MaxValue>
+        <MaxValue>-50</MaxValue>
         <MinValue>-100</MinValue>
     </CMD>
     <CMD name="PERF_RES_FPS_FBT_FLOOR_BOUND" id="0x02014000">
@@ -108,7 +108,7 @@
     <CMD name="PERF_RES_SCHED_UCLAMP_MIN_BG" id="0x01408200">
         <Entry path="/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_bg_uclamp_min"></Entry>
         <Compare>more</Compare>
-        <MaxValue>100</MaxValue>
+        <MaxValue>10</MaxValue>
         <MinValue>0</MinValue>
     </CMD>
     <CMD name="PERF_RES_SCHED_UCLAMP_MIN_TA" id="0x01408300">
@@ -120,7 +120,7 @@
     <CMD name="PERF_RES_FPS_EARA_BENCH" id="0x02028000">
         <Entry path="/sys/kernel/fpsgo/eara/ai_bench"></Entry>
         <Compare>more</Compare>
-        <MaxValue>1</MaxValue>
+        <MaxValue>0</MaxValue>
         <MinValue>0</MinValue>
         <DefaultValue>0</DefaultValue>
     </CMD>
@@ -129,7 +129,7 @@
         <Compare>more</Compare>
         <MaxValue>101</MaxValue>
         <MinValue>-1</MinValue>
-        <DefaultValue>100</DefaultValue>
+        <DefaultValue>10</DefaultValue>
     </CMD>
     <CMD name="PERF_RES_FPS_FBT_BOOST_TA" id="0x02030000">
         <Entry path="/sys/kernel/fpsgo/fbt/boost_ta"></Entry>
@@ -210,6 +210,7 @@
         <MaxValue>5</MaxValue>
         <MinValue>0</MinValue>
         <DefaultValue>2</DefaultValue>
+		<SportValue>3</SportValue>
         <Prefix>touch_opp^</Prefix>
     </CMD>
     <CMD name="PERF_RES_POWERHAL_TOUCH_BOOST_DURATION" id="0x03408100">
@@ -342,7 +343,7 @@
         <Entry path="/sys/kernel/fpsgo/common/stop_boost"></Entry>
         <Compare>more</Compare>
         <MaxValue>65535</MaxValue>
-        <MinValue>0</MinValue>
+        <MinValue>-1</MinValue>
     </CMD>
     <CMD name="PERF_RES_FPS_FPSGO_LLF_TH" id="0x02044000">
         <Entry path="/sys/module/fbt_cpu/parameters/loading_th"></Entry>
@@ -377,6 +378,14 @@
         <MaxValue>1</MaxValue>
         <MinValue>0</MinValue>
         <Prefix>enable^</Prefix>
+	      <CMD name="PERF_RES_GPU_SHED_MODE" id="0x0302c000">
+        <Entry path="/sys/devices/platform/13040000.mali/js_ctx_scheduling_mode"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>1</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+        <Valid>1</Valid>
+    </CMD>
     </CMD>
 </CONTABLE>
 
